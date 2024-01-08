@@ -37,4 +37,4 @@ jobs:
             TE_PASS: ${{secrets.TESTENGINE_PASS}}
             TE_ADDR: ${{secrets.TESTENGINE_LOCATION}}
           run: |
-            testengine -u $TE_USER -p $TE_PASS -H $TE_ADDR run project $GITHUB_WORKSPACE/weathermaps.xml            
+            testengine -u $TE_USER -p $TE_PASS -H $TE_ADDR run project printReport $GITHUB_WORKSPACE/weathermaps.xml            
