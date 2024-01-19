@@ -38,3 +38,7 @@ jobs:
             TE_ADDR: ${{secrets.TESTENGINE_LOCATION}}
           run: |
             testengine -u $TE_USER -p $TE_PASS -H $TE_ADDR run project printReport $GITHUB_WORKSPACE/weathermaps.xml            
+
+        - name: Generate job status
+          run: |
+            testengine jobs status 4e9cf004-4967-4234-b799-4431d1091162
